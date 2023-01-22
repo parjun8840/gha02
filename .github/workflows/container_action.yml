@@ -13,6 +13,6 @@ jobs:
           input-values: '{"Name": "Arjun Pandey"}'
       - name: print the values
         run: echo "Returned ${{ steps.basic-action.outputs.op }}"
-      - uses: composite-action/
+      - uses: ./composite-action
         with:
           python-version: '3.9.1'
