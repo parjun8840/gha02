@@ -6,7 +6,7 @@ inputs:
     required: true
     default: '{}'
 outputs:
-  return-word:
+  op:
     description: 'output values we entered'
 runs:
   using: 'docker'
