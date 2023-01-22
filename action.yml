@@ -13,6 +13,4 @@ runs:
   image: alpine:latest
   args:
     - echo
-    - "op=${{ inputs.input-values }}" 
-    - ">>" 
-    - $GITHUB_OUTPUT
+    - "op=${{ inputs.input-values }} >> \$GITHUB_OUTPUT" 
