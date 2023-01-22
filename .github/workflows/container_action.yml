@@ -1,4 +1,4 @@
-on: [pull_request]
+on: [push]
 
 jobs:
   container-action-job:
@@ -13,3 +13,4 @@ jobs:
           input-values: '{"Name": "Arjun Pandey"}'
       - name: print the values
         run: echo "Returned ${{ steps.basic-action.outputs.op }}"
+      - uses: ./.github/
