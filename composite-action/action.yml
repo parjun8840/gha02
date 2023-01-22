@@ -7,7 +7,7 @@ inputs:
 outputs:
   op:
     description: python version
-    vaule: ${{ steps.pyversion.outputs.step-op }}
+    value: ${{ steps.pyversion.outputs.step-op }}
 runs:
   using: "composite"
   steps:
