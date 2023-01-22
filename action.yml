@@ -7,7 +7,7 @@ inputs:
     default: '{}'
 outputs:
   return-word:
-    description: 'output values we entered''
+    description: 'output values we entered'
 runs:
   using: 'docker'
   image: 'Dockerfile'
