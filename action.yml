@@ -12,4 +12,5 @@ runs:
   using: 'docker'
   image: alpine:latest
   args:
-    - ${{ inputs.input-values }}
+    - echo 
+    - "op=${{ inputs.input-values }}"
