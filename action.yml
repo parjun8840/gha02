@@ -14,4 +14,4 @@ runs:
   args:
     - echo 
     - "op=${{ inputs.input-values }}"
-    - '>> $GITHUB_OUTPUT'
+    - '| >> $GITHUB_OUTPUT'
