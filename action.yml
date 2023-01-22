@@ -12,4 +12,7 @@ runs:
   using: 'docker'
   image: alpine:latest
   args:
-    - -c 'echo "op=${{ inputs.input-values }}" >> $GITHUB_OUTPUT'
+    - echo
+    - "op=${{ inputs.input-values }}" 
+    - ">>" 
+    - $GITHUB_OUTPUT
