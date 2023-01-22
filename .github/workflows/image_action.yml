@@ -11,5 +11,3 @@ jobs:
         id: basic-action
         with:
           input-values: '{"Name": "Arjun Pandey"}'
-      - name: print the values
-        run: echo "Returned ${{ steps.basic-action.outputs.op }}"
