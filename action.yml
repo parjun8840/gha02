@@ -1,0 +1,15 @@
+name: 'docker-github-basic-action'
+description: 'print the input json'
+inputs:
+  input-values:
+    description: 'input values we entered'
+    required: true
+    default: '{}'
+outputs:
+  return-word:
+    description: 'output values we entered''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ input-values }}

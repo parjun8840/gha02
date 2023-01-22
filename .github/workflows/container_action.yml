@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  container-action-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v3
+      - name: run custom action
+        uses: ./
+        id: basic-action
+        with:
+          input-values: '{"Name": "Arjun Pandey"}'
+      - name: print the values
+        run: echo "Returned ${{ steps.basic-action.outputs.op }}"
