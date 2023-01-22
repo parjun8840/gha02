@@ -21,3 +21,4 @@ runs:
     - name: python version
       run: echo "step-op=$(python -v)" >> $GITHUB_OUTPUT
       id: pyversion
+      shell: bash
